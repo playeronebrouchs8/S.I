@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfirmasi WhatsApp</title>
+    <script>
+        function startQuestions() {
+            let answer1 = confirm("Apakah Anda Ingin WA Saya?");
+            if (answer1) {
+                let answer2 = confirm("Anda yakin?");
+                if (answer2) {
+                    window.location.href = "https://wa.me/6285975097618";
+                } else {
+                    alert("Klik Oke");
+                }
+            } else {
+                alert("Klik Oke");
+            }
+        }
+    </script>
+</head>
+<body onload="startQuestions()">
+    <h1>Mohon tunggu...</h1>
+</body>
+</html>
